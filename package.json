@@ -6,7 +6,9 @@
     "backend": "bun run --hot --watch backend/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@types/react": "^18.2.37",
+    "elysia": "latest",
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "bun-types": "latest"

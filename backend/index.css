@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Acron";
+  src: url("./fonts//acorn.woff") format("woff");
+  /* other font properties */
+}
+@font-face {
+  font-family: "Gt";
+  src: url("./fonts//gt.woff") format("woff");
+  /* other font properties */
+}
+
+:root {
+  --titleFont: "Acron", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --bodyFont: "Gt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --color-primary: hsla(172, 95%, 18%, 1);
+  --color-gradient: linear-gradient(
+    to bottom,
+    hsla(158, 23%, 18%, 0) 0%,
+    hsla(158, 23%, 18%, 0.013) 9.7%,
+    hsla(158, 23%, 18%, 0.049) 18.1%,
+    hsla(158, 23%, 18%, 0.104) 25.5%,
+    hsla(158, 23%, 18%, 0.175) 31.9%,
+    hsla(158, 23%, 18%, 0.259) 37.7%,
+    hsla(158, 23%, 18%, 0.352) 43%,
+    hsla(158, 23%, 18%, 0.45) 47.9%,
+    hsla(158, 23%, 18%, 0.55) 52.8%,
+    hsla(158, 23%, 18%, 0.648) 57.7%,
+    hsla(158, 23%, 18%, 0.741) 63%,
+    hsla(158, 23%, 18%, 0.825) 68.7%,
+    hsla(158, 23%, 18%, 0.896) 75%,
+    hsla(158, 23%, 18%, 0.951) 82.2%,
+    hsla(158, 23%, 18%, 0.987) 90.5%,
+    hsl(158, 23%, 18%) 100%
+  );
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  background: var(--color-primary);
+  transition: background 2s linear;
+
+}
+
+.title {
+  color: hsla(160, 52%, 71%, 1);
+  text-align: 'center';
+  font-size: 67px;
+  line-height: 1;
+  font-family: var(--titleFont);
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+p {
+  font-family: var(--bodyFont);
+  
+}
+
+.bodyP{
+    font-size: 17;
+    margin-top: 30px;
+    color: hsla(160, 52%, 71%, 1);
+}
+
+.header {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+}
